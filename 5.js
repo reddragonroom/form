@@ -274,6 +274,10 @@ if (run === false) {
     text-decoration : none;
 
   }
+  input[readonly] {
+      cursor: text !important;      
+      background-color: inherit !important; 
+  }
 
   @media screen and (max-width: 600px) {
       .container {
